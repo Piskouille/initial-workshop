@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+    padding: 50px;
+}
+
+.target{
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: dashed 3px black;
+}
+
+td{
+    border: solid 1px;
+    width: 50px;
+    height: 50px;
+}
+
+.middle-line td:nth-child(2n+1){
+    background-color: rgba(61, 87, 165, .4);
+}
+
+.wrapper{
+    width: 300px;
+}
+
+.subwrapper{
+    border: solid 1px black;
+    margin: 2px;
+}
+
+.nested{
+    background-color: blueviolet;
+    color: white;
+    margin: 0 2px 0 2px;
+    padding: 4px;
+
+}
+
+.a, .b, .c{
+    margin-top: 2px;
+}
+
+.a, .d{
+    width: 29%;
+}
+
+.b, .c{
+    width: 70%;
+}
+
+.c, .d{
+    text-align: right;
+}
+
+.c{
+    margin-left: auto;
+
+}
+
+.square{
+    display: inline-block;
+    margin-right: -5px;
+    height: 50px;
+    width: 75px;
+    text-align: center;
+    vertical-align: middle; /*Doesn't seem to work :'(*/
+    color: white;
+}
+
+.subwrapperbonus{
+    margin: 2px;
+}
+
+.row-1 .square{
+    background-color: red;
+    border-left: solid 2px black;
+}
+
+.row-1 .square:nth-child(4){
+    border-right: solid 2px black;
+
+}
+
+.row-2 .square{
+    background-color: black;
+    border-left: solid 2px red;
+}
+
+.row-2 .square:nth-child(4){
+    border-right: solid 2px red;
+}
+
+.row-3, .row-4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-3 .square-2{
+    background-color: orange;
+    border-left: solid 2px green;
+}
+
+.row-4 .square-2{
+    background-color: green;
+    border-left: solid 2px orange;
+}
+
+.row-3 .square-2:nth-child(4){
+    border-right: solid 2px green;
+}
+
+.row-4 .square-2:nth-child(4){
+    border-right: solid 2px orange;
+}
+
+.square-2{
+    height: 50px;
+    width: 75px;
+    text-align: center;
+    vertical-align: middle; /*Doesn't seem to work :'(*/
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin-top: 100px;
+}
+
+h1:nth-child(1){
+    margin-top: 0;
+}
